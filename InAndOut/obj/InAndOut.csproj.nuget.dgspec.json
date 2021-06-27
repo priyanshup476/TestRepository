@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\priya\\source\\repos\\InAndOut\\InAndOut.csproj": {}
+    "C:\\Users\\priya\\Desktop\\GitTest\\TestRepository\\InAndOut\\InAndOut.csproj": {}
   },
   "projects": {
-    "C:\\Users\\priya\\source\\repos\\InAndOut\\InAndOut.csproj": {
+    "C:\\Users\\priya\\Desktop\\GitTest\\TestRepository\\InAndOut\\InAndOut.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\priya\\source\\repos\\InAndOut\\InAndOut.csproj",
+        "projectUniqueName": "C:\\Users\\priya\\Desktop\\GitTest\\TestRepository\\InAndOut\\InAndOut.csproj",
         "projectName": "InAndOut",
-        "projectPath": "C:\\Users\\priya\\source\\repos\\InAndOut\\InAndOut.csproj",
+        "projectPath": "C:\\Users\\priya\\Desktop\\GitTest\\TestRepository\\InAndOut\\InAndOut.csproj",
         "packagesPath": "C:\\Users\\priya\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\priya\\source\\repos\\InAndOut\\obj\\",
+        "outputPath": "C:\\Users\\priya\\Desktop\\GitTest\\TestRepository\\InAndOut\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
