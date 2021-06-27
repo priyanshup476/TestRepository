@@ -1,0 +1,82 @@
+﻿@model IEnumerable<InAndOut.Models.Expense>
+
+<div class="container p-3">
+
+    <div class="row pt-4">
+        <div class="col-6">
+            <h1 class="text-primary">Index _ Expense List</h1>
+        </div>
+      
+
+        <div class="col-12 text-right">
+            <form method="get" asp-action="Index">
+                <p>
+                    <input type="search" placeholder="Please Serach Here" value="@ViewData["GetData"]" name="SearchTerm" style="width:500px;" />
+
+                    <input type="submit" value="Search" class="btn btn-primary" />
+
+                    <a asp-action="Index">Get All Expenses</a>
+                </p>
+
+            </form>
+
+            <a class="btn btn-primary" asp-controller="Expense" asp-action="Create"> Create New Expense  </a>
+
+
+        </div>
+
+    @if(Model.Count()>0)
+            {
+              <table class="table table-bordered table-striped" style="width:100%" >
+                  <thead>
+                      <tr>
+                          <th>
+                              Expense Id
+                          </th>
+                          <th>
+                              Expense Name
+                          </th>
+                          <th>
+                              Expense Amount
+                          </th>
+                          <th>
+                              Operation
+                          </th>
+                          <th>
+                              
+                          </th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      @foreach(var expense in Model)
+                          {
+                      <tr>
+                          <td width="10%">@expense.Id</td>
+                          <td width="30%">@expense.ExpenseName</td>
+                          <td width="30%">@expense.Amount</td>
+                          <td width="15%">
+                              <div class="w-100 btn-group" role="group">
+                                  <a class="btn btn-primary mx-1" asp-controller="Expense" asp-action="Update" asp-route-Id="@expense.Id">Update  </a>
+                                </div>
+                          </td>
+                          <td width="15%">
+                              <div class="w-100 btn-group" role="group">
+                                  <a class="btn btn-danger mx-1" asp-controller="Expense" asp-action="Delete" asp-route-Id="@expense.Id">Delete  </a>
+
+                              </div>
+                          </td>
+
+                      </tr>
+                           }
+                  </tbody>
+              </table>
+            }
+            else
+            {
+                <p>No Items Created Yet</p>
+            }
+
+
+</div>
+
+</div>
